@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>SounX</title>
+    <link rel="icon" href="/includes/assets/icons/Orange_arrow.ico" />
+    <link rel="stylesheet" href="includes/assets/csss/home.css">
+    <style>
+    </style>
+</head>
+<body class="bg-[#000] scroll-smooth">
+
+    <!-- HEADER  -->
+    <header class="rounded-[8px] grid grid-cols-[425px_1fr_425px] ">
+
+        <!-- LEFT  -->
+        <div class="left flex items-center ">
+            <a href="index.php">
+                <div #id="brand_left" class="flex">
+                    <button #id="spotify_button" class="">
+                    <img src="includes/assets/icons/Spotify.svg" class="ml-5 animate-pulse hover:animate-spin transition-all duration-300" alt="spotify_icon" />
+                    </button>
+                </div>
+            </a>
+        </div>
+
+        <!-- CENTER  -->
+        <div class="_center flex justify-center items-center ">
+            <div #id="top_center" class="flex gap-2  w-full justify-center items-center">
+                <a href="index.php">
+                    <div #id="home"
+                        class="bg-[#1f1f1f] hover:bg-[#2a2a2a] p-[8px] rounded-full transition duration-300 ">
+                        <img src="includes/assets/icons/home.svg" alt="" />
+                    </div>
+                </a>
+                <!-- SEARCH BAR  -->
+                <div class="relative">
+                    <!-- SEARCH ICON -->
+                    <img src="includes/assets/icons/Search Icon.svg" 
+                        class="absolute left-2 top-1/2 transform -translate-y-1/2 h-8 w-8 cursor-pointer" 
+                        onclick="focusSearchbox()" alt="Search Icon"/>
+                    
+                    <!-- SEARCH INPUT -->
+                    <input type="text" id="searchbox" name="searchbox" placeholder="What do you want to play?"
+                        class=" text-white font-cirbook font-semibold placeholder:font-cirbo placeholder:font-semibold 
+                                placeholder:text-[16px] placeholder-[#b3b3b3] bg-[#1f1f1f] h-[38px] rounded-full 
+                                py-[2px] px-12 w-[450px]  hover:bg-[#2a2a2a] transition-all duration-300 outline-none"  />
+                </div>
+            </div>
+        </div>
+            <!-- CENTER END  -->
+
+        
+        <!-- RIGHT  -->
+        <div class="right flex items-center justify-end ">
+            <div class="bg-[#1F1F1F] hover:bg-[#2a2a2a]  px-2 flex items-center rounded-full mr-2 cursor-pointer transition duration-300 h-[45px]">
+                <div class="flex items-center justify-center h-full ">
+                    <span class="font-bold font-spmix text-[#FF6B2B] px-2 tracking-wide text-lg">
+                        <?php echo $userLoggedIn ?>nixn
+                    </span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="includes/assets/images/skulls.jpg" class="w-8 h-8 rounded-full" alt="user_Profile_picture">
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- HEADER END  -->
+
+
+
+    <!-- SIDEBAR  -->
+    <aside class="rounded-[8px] px-4 overflow-y-auto">
+    <div class="glass h-full">
+        <!-- PLAYLIST BOXES  -->
+        <div class="playlistBox  flex flex-col p-2 tracking-wide overflow-y-auto h-full rounded-[8px]">
+
+            <!-- PLAYLIST BOXES  -->
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+            <div class="size-10  bg-center bg-no-repeat rounded-[4px] bg-cover" 
+            style="background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');"></div>
+            <div class="ml-3">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+            </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" 
+              style="background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                      background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+
+            <div class="boxes flex flex-shrink-0 items-center w-full h-16 px-2 rounded-[6px] hover:animate-pulse hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.50)] duration-200">
+              <div class="size-10 bg-cover bg-center bg-no-repeat rounded-[4px]" style="
+                    background-image: url('includes/assets/images/sasuke\ uchiha-cool.jpg');">
+              </div>
+              <div class="ml-3 try">
+                <h4 class="text-[16px] font-spmix font-semibold text-white">Braindead</h4>
+                <h4 class="text-[12px] font-cirmd font-semibold tracking-widest ">NIXN</h4>
+              </div>
+            </div>
+        </div>
+        <!-- PLAYLIST BOXES END  -->
+    </div>
+    <!-- GLASS SIDE END  -->
+    </aside>
+    <!-- SIDEBAR END  -->
+
+
+    <!-- MAIN START  -->
+    <main class="rounded-[8px]">
+
+
+    </main>
+    <!-- MAIN END  -->
+
+
+
+    <!-- FOOTER  -->
+    <footer class="rounded-[8px] grid grid-cols-[425px_1fr_425px]">
+
+
+        <!-- LEFT -->
+        <div class="left flex items-center px-4 select-none ">
+            <div #id="artwork" class="size-[55px]">
+                <img src="includes/assets/images/skulls.jpg"
+                class="w-full h-full bg-cover bg-center bg-no-repeat rounded-[4px]" alt="">
+            </div>
+            <div id="songInfo" class="flex flex-col px-4">
+                <span class="font-semibold font-spmix text-[15px] leading-snug text-white" title="Song">Cruel World</span>
+                <span class="font-medium text-[#b3b3b3]  leading-none font-cirbo text-[11px]" title="Artist">NixN S</span>
+            </div>
+
+        </div>
+                <!-- CENTER  -->
+                <div class="center flex flex-col tracking-wide">
+                    <div id="centerControls" class="flex items-center justify-center w-full h-full gap-6 hover:">
+                        <button><img src="includes/assets/icons/PREVIOUS.svg" class="size-4 hover:size-5 duration-200" title="Previous"
+                            alt="previous_button">
+                        </button>
+                        <button onclick="playSong()" class="playButton transition-all duration-300 animate-pulse ">
+                            
+                        <img src="includes/assets/icons/play.svg" class="size-8 hover:size-10 duration-200" title="Play" alt="play_button">
+                        </button>
+                        <button class="pauseButton hidden" onclick="pauseSong()">
+                        <img src="includes/assets/icons/Pause.svg" class="size-8 hover:size-10 duration-200" title="Pause" alt="pause_button">
+                        </button>
+                        <button>
+                        <img src="includes/assets/icons/NEXT.svg" class="size-4 hover:size-5 duration-200" title="Next" alt="next_button">
+                        </button>
+                    </div>
+
+                    <div id="progressBar" class="flex items-center justify-center gap-x-2">
+                        <div id="currentTime" class="flex items-center justify-center"><span #currentTime="" class="text-xs font-semibold font-spmix cursor-none"
+                            title="Current Time">01:30</span>
+                        </div>
+                        <div id="progressBg" class="w-3/4 h-[5px] rounded-full bg-[#2a2a2a] cursor-pointer ">
+                        <div id="progress" class="w-1/2 h-[5px] rounded-full bg-[#FF6B2B] cursor-pointer animate-pulse  "></div>
+                        </div>
+                        <div id="remainingTime" class="flex items-center justify-center"><span #remainingTime="" class="text-xs font-semibold font-spmix cursor-none"
+                            title="Total Time">03:00</span>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- RIGHT  -->
+        <div class="right flex items-center justify-center">
+            
+            <div id="rightControls" class="flex gap-4 ">
+                <button class="muteButton" onclick="muteVolume()" title="Mute"><img src="includes/assets/icons/SPEAKER.svg" class="size-[18px] hover:size-5 duration-200" alt="mute_button">
+                </button>
+                <button #id="" title="Fullscreen"><img src="includes/assets/icons/FULLSCREEN.svg" class="size-[18px] hover:size-5 duration-200" alt="">
+                </button>
+                <button #id="" title="Add to Playlist"><img src="includes/assets/icons/plus.svg"
+                    class="size-[18px] hover:size-5 duration-200" alt="">
+                </button>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <!-- FOOTER END  -->
+</body>
+<!-- SEARCH BAR FOCUS SCRIPT  -->
+<script>
+    function focusSearchbox() {
+        document.getElementById("searchbox").focus();
+    }
+    </script>
+</html>

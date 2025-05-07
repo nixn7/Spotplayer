@@ -1,0 +1,60 @@
+# Spotplayer .gitignore file
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*~
+
+# Node.js dependencies and build files
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm/
+*.log
+
+# PHP dependencies
+vendor/
+
+# Compiled CSS files (if you're compiling directly)
+*.css.map
+
+# Environment and config files (add these if you use them)
+.env
+.env.local
+config.local.php
+
+# User uploads - don't track user content in git
+uploads/*
+!uploads/.gitkeep
+
+# Backup files
+BKP/
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Cache files
+*.cache
+
+# Database files that might contain sensitive information
+*.sql
+*.sqlite
+*.db
+
+# Test and documentation files
+docs/
+tests/
+phpunit.xml
+
+# Composer files
+composer.phar
+composer.lock
+
+# Distribution/build directories
+dist/
+build/

@@ -1,0 +1,28 @@
+{
+  "name": "spotplayer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "vite": "vite",
+    "register": "npx tailwindcss -i input.css -o register_style.css --watch",
+    "watchregister": "npx tailwindcss -i input.css -o register_style.css",
+    "index": "npx tailwindcss -i index_input.css -o ./includes/assets/csss/index_style.css",
+    "watchindex": "npx tailwindcss -i index_input.css -o ./includes/assets/csss/index_style.css --watch",
+    "album": "npx tailwindcss -i album_input.css -o ./includes/assets/csss/album_style.css",
+    "watchalbum": "npx tailwindcss -i album_input.css -o ./includes/assets/csss/album_style.css --watch",
+    "watch2": "NODE_ENV=production npx tailwindcss -c tailwind.config.js -i main.css -o tailwind.css --watch",
+    "watch": "npx tailwindcss -i ./input.css -o ./tailwind.css --watch"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "tone": "^15.0.4"
+  }
+}

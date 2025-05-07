@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 8px;
+    color: white;
+    display: grid;
+    grid-template-columns: minmax(250px ,22vw) 1fr;
+    grid-template-rows: 48px 1fr 78px;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+    height: 100vh;
+    gap: 8px;
+    background-color: black;
+}
+header {
+    grid-area: header;
+    height:48px ;
+}
+aside {
+    /* background-color: #121212; */
+    background-image: url("C:/wamp64/www/Spotplayer/includes/assets/images/swan.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: aside;
+    min-width: 250px;
+}
+main {
+    background-color: #121212;
+    min-width: 400px;
+    grid-area: main;
+}
+footer {
+    height: 72px;
+    grid-area: footer;
+}
+.glass {
+    backdrop-filter: blur(20px) ;
+    /* -webkit-backdrop-filter: blur(16px) saturate(180%); */
+    background-color: rgba(18, 18, 18, 0.45);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
