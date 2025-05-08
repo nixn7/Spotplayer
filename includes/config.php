@@ -18,7 +18,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 date_default_timezone_set("Asia/Calcutta");
 
-$con = mysqli_connect("localhost", "root", "", "spotplayer");
+$con = mysqli_connect("localhost", "root", "", "sounx");
 if (mysqli_connect_errno()) {
     echo "Connection Error: Couldn't establish a connection! " . mysqli_connect_errno();
     exit();

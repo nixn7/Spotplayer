@@ -1,10 +1,10 @@
-# 🎵 Spotplayer - Your Music Streaming Hub 🎧
+# 🎵 Sounx - Your Music Streaming Hub 🎧
 
-Welcome to Spotplayer! This project is a web-based music player application designed to help you manage and enjoy your music library. 🎶
+Welcome to Sounx! This project is a web-based music player application designed to help you manage and enjoy your music library. 🎶
 
 ## ✨ Overview
 
-Spotplayer allows users to browse, play, and manage their music collection. It includes features for organizing music by albums and artists, creating playlists, and an admin interface for managing data. The application uses the powerful **getID3** library to extract metadata from audio files.
+Sounx allows users to browse, play, and manage their music collection. It includes features for organizing music by albums and artists, creating playlists, and an admin interface for managing data. The application uses the powerful **getID3** library to extract metadata from audio files.
 
 ## 🚀 Features
 
@@ -37,7 +37,7 @@ Spotplayer allows users to browse, play, and manage their music collection. It i
 Here's a glimpse into the project's organization:
 
 ```
-Spotplayer/
+Sounx/
 ├── admin.php                 # Admin panel
 ├── album.php                 # Album display page
 ├── artist.php                # Artist display page
@@ -59,7 +59,7 @@ Spotplayer/
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/nixn7/Spotplayer.git
+    git clone https://github.com/nixn7/Sounx.git
     ```
     
 2.  **Server Environment:**
@@ -69,12 +69,12 @@ Spotplayer/
     
 3.  **Project Setup:**
     ```
-    Place the cloned Spotplayer folder in your web server's root directory (e.g., c:\wamp64\www\)
+    Place the cloned Sounx folder in your web server's root directory (e.g., c:\wamp64\www\)
     ```
     
 4.  **Database Setup:**
-    *   Create a MySQL database named `spotplayer`.
-    *   Import the provided `spotplayer.sql` file using phpMyAdmin or MySQL command line.
+    *   Create a MySQL database named `Sounx`.
+    *   Import the provided `Sounx.sql` file using phpMyAdmin or MySQL command line.
     
 5.  **File Permissions:** 
     *   Ensure the `uploads/` directory has appropriate write permissions.
@@ -91,7 +91,7 @@ Spotplayer/
     
 8.  **Access the application:** 
     ```
-    Open your web browser and navigate to http://localhost/Spotplayer
+    Open your web browser and navigate to http://localhost/Sounx
     ```
 
 ## 🔐 Login Credentials

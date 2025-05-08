@@ -36,7 +36,7 @@ try {
         
         // Create target directory if not exists
         // Use a proper path relative to the site root
-        $targetDir = $_SERVER['DOCUMENT_ROOT'] . "/Spotplayer/includes/assets/images/playlist_covers/"; 
+        $targetDir = $_SERVER['DOCUMENT_ROOT'] . "/sounx/includes/assets/images/playlist_covers/"; 
         if(!file_exists($targetDir)) {
             if(!mkdir($targetDir, 0755, true)) {
                 $response['success'] = false;
