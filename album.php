@@ -95,11 +95,11 @@ $artist = $album->getArtist();
 
 <style>
     .trackListRow:hover .trackNumber {
-        opacity: 0;
+        opacity: 0 !important;
     }
 
     .trackListRow:hover .playButton {
-        opacity: 1;
+        opacity: 1 !important;
     }
 </style>
 
@@ -152,25 +152,25 @@ $artist = $album->getArtist();
                 $albumSong = new Song($con, $songId);
                 $albumArtist = $albumSong->getArtist();
 
-                echo "<li id='trackListRow'  class='grid grid-cols-[40px_1fr_1fr_1fr_auto] px-2 items-center hover:animate-pulses  hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.20)]  duration-300  h-12 rounded-[4px] tracking-wider cursor-pointer group '>
+                echo "<li id='trackListRow' class='trackListRow grid grid-cols-[40px_1fr_1fr_1fr_auto] px-2 items-center hover:animate-pulses hover:bg-[#2a2a2a] hover:shadow-[0px_0px_10px_1px_rgba(255,255,255,0.20)] duration-300 h-12 rounded-[4px] tracking-wider cursor-pointer group'>
 
-                            <div id='trackCount' class='relative '>
-                            <span id='trackNumber' class='text-xs absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300 ' >$i</span>
+                            <div id='trackCount' class='relative'>
+                            <span id='trackNumber' class='text-xs absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300'>$i</span>
                             <img id='playButton' class='absolute inset-0 w-4 h-4 m-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300' src='includes/assets/icons/play.svg' onclick='setTrack(\"" . $albumSong->getId() . "\",tempPlaylist,true)'>
                             </div>
 
-                            <div class='trackInfo '>
-                                <span id='trackName' class='text-white text-sm font-spmix font-semibold truncate '>" . $albumSong->getTitle() . "</span>
+                            <div class='trackInfo'>
+                                <span id='trackName' class='text-white text-sm font-spmix font-semibold truncate'>" . $albumSong->getTitle() . "</span>
                             </div>
 
                             <div class='flex'>
                                 <img src='includes/assets/images/skulls.jpg' alt='' class='self-center w-5 h-5 rounded-full mx-1'/>
-                                <span id='artistName' class='text-xs text-[#b3b3b3] truncate' >" . $albumArtist->getName() . "</span>
+                                <span id='artistName' class='text-xs text-[#b3b3b3] truncate'>" . $albumArtist->getName() . "</span>
                             </div>
 
                         <div id='trackOptions'>
                             <input type='hidden' class='songId' value='" . $albumSong->getId() . "'>
-                            <img class='optionButton size-7 hover:bg-[#4a4a4a] transition duration-300 ease-in-out p-2 rounded-full cursor-pointer'src='includes/assets/icons/plus.svg' onclick='showOptionsMenu(this)'>
+                            <img class='optionButton size-7 hover:bg-[#4a4a4a] transition duration-300 ease-in-out p-2 rounded-full cursor-pointer' src='includes/assets/icons/plus.svg' onclick='showOptionsMenu(this)'>
                         </div>
 
                             <div id='trackDuration' class='text-xs'>
