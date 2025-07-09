@@ -4,7 +4,7 @@ Welcome to Sounx! This project is a web-based music player application designed 
 
 ## ✨ Overview
 
-Sounx allows users to browse, play, and manage their music collection. It includes features for organizing music by albums and artists, creating playlists, and an admin interface for managing data. The application uses the powerful **getID3** library to extract metadata from audio files.
+Sounx allows users to browse, play, and manage their music collection. It includes features for organizing music by albums and artists, creating playlists, and an admin interface for managing data. 
 
 ## 🚀 Features
 
